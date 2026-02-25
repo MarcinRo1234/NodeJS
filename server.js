@@ -1,5 +1,5 @@
 // const http = require('http')
-
+const path = require('path');
 const express = require('express');
 const bodyParser = require('body-parser') // npm install body-parser
 const app = express();
@@ -18,5 +18,7 @@ app.use('/admin', adminRoutes);
 app.use(shopRoutes);
 
 app.use((req, res, next) => {
-    res.status(404).send('<h1>Page notu found</h1>');
+    res.status(404).sendFile(__dirname, 'Views', '404.html');
 })
+
+app.listen(3000)
