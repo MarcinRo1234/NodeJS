@@ -5,6 +5,7 @@ const bodyParser = require('body-parser') // npm install body-parser
 const app = express();
 
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')))
 
 const adminRoutes = require("./Routes/admin");
 const shopRoutes = require("./Routes/shop");
