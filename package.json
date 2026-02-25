@@ -1,0 +1,24 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcinRo1234/NodeJS.git"
+  },
+  "author": "MR",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcinRo1234/NodeJS/issues"
+  },
+  "homepage": "https://github.com/MarcinRo1234/NodeJS#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14"
+  }
+}
